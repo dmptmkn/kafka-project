@@ -2,7 +2,6 @@ package org.example.kafkaproducer.controller;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
 import org.example.kafkacore.Alert;
 import org.example.kafkacore.AlertStatus;
 import org.example.kafkaproducer.callback.AlertCallback;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.Instant;
-import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/alert")
